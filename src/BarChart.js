@@ -27,7 +27,7 @@ function BarChart() {
           <Run key={run.date} run={run} maxDistance={26.2} count={Runs.count} />
         ))}
       </div>
-      <div>Marthon (2020-03-01)</div>
+      <div>Marathon (2020-03-01)</div>
     </div>
   )
 }
