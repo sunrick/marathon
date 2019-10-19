@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "27be7f7b9f8412e78053144dce9d2c24",
+    "revision": "0b5cf3b0e584fb117951714c43e3079d",
     "url": "/marathon/index.html"
   },
   {
-    "revision": "64e14a04270a4f4e50ba",
+    "revision": "5996c9d3f420b322da27",
     "url": "/marathon/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "64e14a04270a4f4e50ba",
-    "url": "/marathon/static/js/2.7d262993.chunk.js"
+    "revision": "5996c9d3f420b322da27",
+    "url": "/marathon/static/js/2.5bf092d2.chunk.js"
   },
   {
-    "revision": "5e23f779ab42f90929e7",
-    "url": "/marathon/static/js/main.2372b35a.chunk.js"
+    "revision": "48213f3ecccce661bfa6",
+    "url": "/marathon/static/js/main.4abef3ea.chunk.js"
   },
   {
     "revision": "bf1b66316aebd690baae",

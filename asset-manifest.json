@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/marathon/static/js/main.2372b35a.chunk.js",
-    "main.js.map": "/marathon/static/js/main.2372b35a.chunk.js.map",
+    "main.js": "/marathon/static/js/main.4abef3ea.chunk.js",
+    "main.js.map": "/marathon/static/js/main.4abef3ea.chunk.js.map",
     "runtime-main.js": "/marathon/static/js/runtime-main.f8dbbdb8.js",
     "runtime-main.js.map": "/marathon/static/js/runtime-main.f8dbbdb8.js.map",
     "static/css/2.764ccc25.chunk.css": "/marathon/static/css/2.764ccc25.chunk.css",
-    "static/js/2.7d262993.chunk.js": "/marathon/static/js/2.7d262993.chunk.js",
-    "static/js/2.7d262993.chunk.js.map": "/marathon/static/js/2.7d262993.chunk.js.map",
+    "static/js/2.5bf092d2.chunk.js": "/marathon/static/js/2.5bf092d2.chunk.js",
+    "static/js/2.5bf092d2.chunk.js.map": "/marathon/static/js/2.5bf092d2.chunk.js.map",
     "index.html": "/marathon/index.html",
-    "precache-manifest.3783be5ba2188760377d29e89faa5bed.js": "/marathon/precache-manifest.3783be5ba2188760377d29e89faa5bed.js",
+    "precache-manifest.d574e2fc8e801945b4e3da56ce229eac.js": "/marathon/precache-manifest.d574e2fc8e801945b4e3da56ce229eac.js",
     "service-worker.js": "/marathon/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/marathon/static/css/2.764ccc25.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.f8dbbdb8.js",
     "static/css/2.764ccc25.chunk.css",
-    "static/js/2.7d262993.chunk.js",
-    "static/js/main.2372b35a.chunk.js"
+    "static/js/2.5bf092d2.chunk.js",
+    "static/js/main.4abef3ea.chunk.js"
   ]
 }
