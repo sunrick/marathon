@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.js": "/marathon/static/js/main.1f8f5f1d.chunk.js",
-    "main.js.map": "/marathon/static/js/main.1f8f5f1d.chunk.js.map",
+    "main.css": "/marathon/static/css/main.1ca0d2e9.chunk.css",
+    "main.js": "/marathon/static/js/main.d6299111.chunk.js",
+    "main.js.map": "/marathon/static/js/main.d6299111.chunk.js.map",
     "runtime-main.js": "/marathon/static/js/runtime-main.f8dbbdb8.js",
     "runtime-main.js.map": "/marathon/static/js/runtime-main.f8dbbdb8.js.map",
     "static/css/2.764ccc25.chunk.css": "/marathon/static/css/2.764ccc25.chunk.css",
-    "static/js/2.5bf092d2.chunk.js": "/marathon/static/js/2.5bf092d2.chunk.js",
-    "static/js/2.5bf092d2.chunk.js.map": "/marathon/static/js/2.5bf092d2.chunk.js.map",
+    "static/js/2.ca2726d7.chunk.js": "/marathon/static/js/2.ca2726d7.chunk.js",
+    "static/js/2.ca2726d7.chunk.js.map": "/marathon/static/js/2.ca2726d7.chunk.js.map",
     "index.html": "/marathon/index.html",
-    "precache-manifest.951fc6ee60bf0ae7f47d5a16a8073137.js": "/marathon/precache-manifest.951fc6ee60bf0ae7f47d5a16a8073137.js",
+    "precache-manifest.e741e338e1deb39a46cb9b3dadedc085.js": "/marathon/precache-manifest.e741e338e1deb39a46cb9b3dadedc085.js",
     "service-worker.js": "/marathon/service-worker.js",
-    "static/css/2.764ccc25.chunk.css.map": "/marathon/static/css/2.764ccc25.chunk.css.map"
+    "static/css/2.764ccc25.chunk.css.map": "/marathon/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.1ca0d2e9.chunk.css.map": "/marathon/static/css/main.1ca0d2e9.chunk.css.map",
+    "static/media/index.css": "/marathon/static/media/clearface_bolditalic.b5745577.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.f8dbbdb8.js",
     "static/css/2.764ccc25.chunk.css",
-    "static/js/2.5bf092d2.chunk.js",
-    "static/js/main.1f8f5f1d.chunk.js"
+    "static/js/2.ca2726d7.chunk.js",
+    "static/css/main.1ca0d2e9.chunk.css",
+    "static/js/main.d6299111.chunk.js"
   ]
 }
