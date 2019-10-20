@@ -14,7 +14,7 @@ function BarChart() {
         width: '1100px'
       }}
     >
-      <div>First day (2019-10-17)</div>
+      <div>First day (2019-10-18)</div>
       <div
         style={{
           display: 'flex',

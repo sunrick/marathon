@@ -1,6 +1,6 @@
 export default [
   {
-    date: '2019-10-17',
+    date: '2019-10-18',
     distance: 3.52,
     pace: [9, 52],
     time: [0, 34, 56],
@@ -9,20 +9,13 @@ export default [
       "Well today was the first day. I haven't really gone for a run since July 4th. Surprisingly it wasn't that tough to run the distance. I don't really have a concrete plan for what my training schedule is going to look like. I just figured I'd see where my baseline was. I was pretty happy with this run. I didn't wear headphones, I just took it easy. I walked when I was tired and I even stopped to look out at a pond for a bit. I felt super relaxed after I was finished."
   },
   {
-    date: '2019-10-18',
+    date: '2019-10-19',
     distance: 0,
     pace: [0, 0],
     time: [0, 0, 0],
     calories: 0,
     notes:
       "I didn't run today, I just went for a long walk with my dog. I felt really sore this morning, but I guess that is part of it. I've been doing pull ups, push ups, squats and some other stuff every day to try build up some muscle strength. I don't want to hurt myself like I have in the past. I have a pretty bad left ankle and left knee."
-  },
-  {
-    date: '2019-10-19',
-    distance: 0,
-    pace: [0, 0],
-    time: [0, 0, 0],
-    calories: 0
   },
   {
     date: '2019-10-20',
