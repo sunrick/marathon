@@ -16,17 +16,30 @@ function BarChart() {
         <p style={{ fontWeight: 700, fontSize: '0.8em' }}>DAY 1</p>
         <p style={{ fontSize: '0.7em' }}>2019-10-18</p>
       </div>
-      <div style={{ padding: '0 2rem' }}>
+      <div style={{ padding: '0 30px' }}>
         <div
           style={{
+            boxSizing: 'border-box',
             display: 'flex',
             flex: 1,
             alignItems: 'flex-end',
             height: '200px',
             width: '800px',
-            borderTop: '1px dashed #fff'
+            borderTop: '1px dashed #fff',
+            position: 'relative'
           }}
         >
+          <div
+            style={{
+              top: '-7px',
+              left: '-70px',
+              position: 'absolute',
+              fontWeight: 700,
+              fontSize: '0.7em'
+            }}
+          >
+            26.2 MILES
+          </div>
           {Runs.items.map(run => (
             <Run
               key={run.date}

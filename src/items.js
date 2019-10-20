@@ -19,10 +19,12 @@ export default [
   },
   {
     date: '2019-10-20',
-    distance: 0,
-    pace: [0, 0],
-    time: [0, 0, 0],
-    calories: 0
+    distance: 3.55,
+    pace: [10, 26],
+    time: [0, 37, 8],
+    calories: 645,
+    notes:
+      "Wasn't sure if I was going to run today. Felt pretty tired still from my previous run. Didn't feel too sore though. Saw that my buddy Julius went for a run so I decided to do it too. I had a slower pace than my first run. It definitely felt like more effort but I decided to take it at an easy pace. Happy that I went for it but now I'm pretty exhausted."
   },
   {
     date: '2019-10-21',
