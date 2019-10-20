@@ -1,5 +1,3 @@
-import _ from 'lodash'
-
 import items from './items'
 
 export default (function Runs() {

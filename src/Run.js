@@ -9,7 +9,7 @@ function Run({ run, maxDistance, count }) {
       style={{
         width: `${widthPercentage}%`,
         height: `${heightPercentage}%`,
-        backgroundColor: 'green'
+        backgroundColor: '#fff'
       }}
     ></div>
   )
