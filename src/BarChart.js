@@ -18,22 +18,38 @@ const ChartArea = styled.div`
   align-items: flex-end;
   height: 200px;
   width: 800px;
-  border-top: 1px dashed #fff;
 `
 
 const Padder = styled.div`
   padding: 0 30px;
 `
 
-const DistanceLabel = styled.div`
-  top: -7px;
-  left: -70px;
+const Label = styled.div`
   position: absolute;
   font-weight: 700;
   font-size: 0.7em;
 `
 
-function Date({ day, date }) {
+const DistanceLabel = ({ top, left, text }) => {
+  return <Label style={{ top: `${top}px`, left: `${left}px` }}>{text}</Label>
+}
+
+const DistanceLine = ({ top }) => {
+  return (
+    <div
+      style={{ top: `${top}px` }}
+      css={`
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        border-top: 1px dashed #fff;
+        z-index: -1;
+      `}
+    />
+  )
+}
+
+const Date = ({ day, date }) => {
   return (
     <div>
       <p
@@ -60,20 +76,20 @@ function Date({ day, date }) {
 }
 
 function BarChart() {
+  const Bars = Runs.items.map(run => (
+    <Run key={run.date} run={run} maxDistance={26.2} count={Runs.count} />
+  ))
+
   return (
     <Wrapper>
       <Date day={1} date={'2019-10-18'} />
       <Padder>
         <ChartArea>
-          <DistanceLabel>26.2 MILES</DistanceLabel>
-          {Runs.items.map(run => (
-            <Run
-              key={run.date}
-              run={run}
-              maxDistance={26.2}
-              count={Runs.count}
-            />
-          ))}
+          <DistanceLabel top={-5} left={-70} text={'26.2 MILES'} />
+          <DistanceLabel top={95} left={-68} text={'13.1 MILES'} />
+          <DistanceLine top={0} />
+          <DistanceLine top={100} />
+          {Bars}
         </ChartArea>
       </Padder>
       <Date day={Runs.count} date={'2020-03-01'} />
