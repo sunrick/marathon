@@ -10,28 +10,6 @@ const Wrapper = styled.div`
   padding: 5rem;
 `
 
-function Date({ day, date }) {
-  return (
-    <div>
-      <p
-        css={`
-          font-weight: 700;
-          font-size: 0.8em;
-        `}
-      >
-        DAY {day}
-      </p>
-      <p
-        css={`
-          font-size: 0.7em;
-        `}
-      >
-        {date}
-      </p>
-    </div>
-  )
-}
-
 const ChartArea = styled.div`
   position: relative;
   box-sizing: border-box;
@@ -43,6 +21,10 @@ const ChartArea = styled.div`
   border-top: 1px dashed #fff;
 `
 
+const Padder = styled.div`
+  padding: 0 30px;
+`
+
 const DistanceLabel = styled.div`
   top: -7px;
   left: -70px;
@@ -51,9 +33,31 @@ const DistanceLabel = styled.div`
   font-size: 0.7em;
 `
 
-const Padder = styled.div`
-  padding: 0 30px;
-`
+function Date({ day, date }) {
+  return (
+    <div>
+      <p
+        css={`
+          font-weight: 700;
+          font-size: 0.8em;
+          margin-bottom: 0;
+          margin-top: 0;
+        `}
+      >
+        DAY {day}
+      </p>
+      <p
+        css={`
+          font-size: 0.7em;
+          margin-bottom: 0;
+          margin-top: 0;
+        `}
+      >
+        {date}
+      </p>
+    </div>
+  )
+}
 
 function BarChart() {
   return (
