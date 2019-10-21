@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4d18a1ad76facbd0376135bc99089ee8",
+    "revision": "7bb8904eb6e4e3baa1df543a3184a179",
     "url": "/marathon/index.html"
   },
   {
-    "revision": "1ddaa80f8464f484e33e",
+    "revision": "cf7aeafadf1392149a18",
     "url": "/marathon/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "304fe710dcaa763cc9bb",
-    "url": "/marathon/static/css/main.1ca0d2e9.chunk.css"
+    "revision": "a62673ecefc894d2b7e5",
+    "url": "/marathon/static/css/main.96e29ff1.chunk.css"
   },
   {
-    "revision": "1ddaa80f8464f484e33e",
-    "url": "/marathon/static/js/2.ca2726d7.chunk.js"
+    "revision": "cf7aeafadf1392149a18",
+    "url": "/marathon/static/js/2.33e54d44.chunk.js"
   },
   {
-    "revision": "304fe710dcaa763cc9bb",
-    "url": "/marathon/static/js/main.53e58df7.chunk.js"
+    "revision": "a62673ecefc894d2b7e5",
+    "url": "/marathon/static/js/main.a9522745.chunk.js"
   },
   {
     "revision": "bf1b66316aebd690baae",
