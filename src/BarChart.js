@@ -4,10 +4,18 @@ import styled from 'styled-components/macro'
 import Runs from './runs'
 import Run from './Run'
 
+const Container = styled.div`
+  padding: 5rem 10rem;
+`
+
+const Stats = styled.div`
+  margin-top: 4rem;
+  display: flex;
+`
+
 const Wrapper = styled.div`
   display: flex;
   align-items: flex-end;
-  padding: 5rem;
 `
 
 const ChartArea = styled.div`
@@ -18,10 +26,6 @@ const ChartArea = styled.div`
   align-items: flex-end;
   height: 200px;
   width: 800px;
-`
-
-const Padder = styled.div`
-  padding: 0 30px;
 `
 
 const Label = styled.div`
@@ -49,9 +53,9 @@ const DistanceLine = ({ top }) => {
   )
 }
 
-const Date = ({ day, date }) => {
+const Stat = ({ header, subheader }) => {
   return (
-    <div>
+    <div style={{ marginRight: '3rem' }}>
       <p
         css={`
           font-weight: 700;
@@ -60,20 +64,23 @@ const Date = ({ day, date }) => {
           margin-top: 0;
         `}
       >
-        DAY {day}
+        {header}
       </p>
       <p
         css={`
-          font-size: 0.7em;
+          font-size: 0.8em;
           margin-bottom: 0;
           margin-top: 0;
         `}
       >
-        {date}
+        {subheader}
       </p>
     </div>
   )
 }
+
+// <Stat header={'DAY 1'} subheader={'2019-10-18'} />
+// <Stat header={`DAY ${Runs.count}`} subheader={'2020-03-01'} />
 
 function BarChart() {
   const Bars = Runs.items.map(run => (
@@ -81,9 +88,8 @@ function BarChart() {
   ))
 
   return (
-    <Wrapper>
-      <Date day={1} date={'2019-10-18'} />
-      <Padder>
+    <Container>
+      <Wrapper>
         <ChartArea>
           <DistanceLabel top={-5} left={-70} text={'26.2 MILES'} />
           <DistanceLabel top={95} left={-68} text={'13.1 MILES'} />
@@ -91,9 +97,15 @@ function BarChart() {
           <DistanceLine top={100} />
           {Bars}
         </ChartArea>
-      </Padder>
-      <Date day={Runs.count} date={'2020-03-01'} />
-    </Wrapper>
+      </Wrapper>
+      <Stats>
+        <Stat header={'DAYS LEFT'} subheader={Runs.daysLeft().toString()} />
+        <Stat
+          header={'TOTAL DISTANCE'}
+          subheader={`${Runs.totalDistance()} MILES`}
+        />
+      </Stats>
+    </Container>
   )
 }
 
