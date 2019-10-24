@@ -82,6 +82,11 @@ const Stat = ({ header, subheader }) => {
 // <Stat header={'DAY 1'} subheader={'2019-10-18'} />
 // <Stat header={`DAY ${Runs.count}`} subheader={'2020-03-01'} />
 
+const labelTopPosition = distance => {
+  const decimal = 1 - distance / 26.2
+  return Math.floor(decimal * 200) - 5
+}
+
 function BarChart() {
   const Bars = Runs.items.map(run => (
     <Run key={run.date} run={run} maxDistance={26.2} count={Runs.count} />
@@ -92,9 +97,17 @@ function BarChart() {
       <Wrapper>
         <ChartArea>
           <DistanceLabel top={-5} left={-70} text={'26.2 MILES'} />
-          <DistanceLabel top={95} left={-68} text={'13.1 MILES'} />
+          <DistanceLabel
+            top={labelTopPosition(13.1)}
+            left={-68}
+            text={'13.1 MILES'}
+          />
+          <DistanceLabel top={labelTopPosition(6.21)} left={-35} text={'10K'} />
+          <DistanceLabel top={labelTopPosition(3.11)} left={-30} text={'5K'} />
           <DistanceLine top={0} />
           <DistanceLine top={100} />
+          <DistanceLine top={labelTopPosition(6.21) + 5} />
+          <DistanceLine top={labelTopPosition(3.11) + 5} />
           {Bars}
         </ChartArea>
       </Wrapper>

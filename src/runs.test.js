@@ -1,5 +1,5 @@
 import Runs from './runs'
 
 it('works', () => {
-  console.log('hi')
+  expect(1).toEqual(1)
 })
