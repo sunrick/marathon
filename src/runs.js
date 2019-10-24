@@ -14,11 +14,16 @@ const totalDistance = () => {
   return _.sumBy(items, 'distance')
 }
 
+const totalRuns = () => {
+  return items.filter(item => item.distance > 0).length
+}
+
 export default (function Runs() {
   return {
     items: items,
     count: count,
     daysLeft: daysLeft,
-    totalDistance: totalDistance
+    totalDistance: totalDistance,
+    totalRuns: totalRuns
   }
 })()

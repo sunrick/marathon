@@ -28,25 +28,31 @@ const ChartArea = styled.div`
   width: 800px;
 `
 
-const Label = styled.div`
-  position: absolute;
-  font-weight: 700;
-  font-size: 0.7em;
-`
-
-const DistanceLabel = ({ top, left, text }) => {
-  return <Label style={{ top: `${top}px`, left: `${left}px` }}>{text}</Label>
-}
-
-const DistanceLine = ({ top }) => {
+const Label = ({ top, left, text }) => {
   return (
     <div
-      style={{ top: `${top}px` }}
+      style={{ top: `${top}px`, left: `${left}px` }}
+      css={`
+        position: absolute;
+        font-weight: 700;
+        font-size: 0.7em;
+      `}
+    >
+      {text}
+    </div>
+  )
+}
+
+const Line = ({ top, type }) => {
+  return (
+    <div
+      style={{ top: `${top}px`, borderTopStyle: type || 'dashed' }}
       css={`
         position: absolute;
         left: 0px;
         right: 0px;
-        border-top: 1px dashed #fff;
+        border-top-width: 1px;
+        border-top-color: #fff;
         z-index: -1;
       `}
     />
@@ -79,12 +85,24 @@ const Stat = ({ header, subheader }) => {
   )
 }
 
+const LabeledLine = ({ top, left, text }) => {
+  top = top || 0
+  left = left || 0
+
+  return (
+    <React.Fragment>
+      <Label top={top - 5} left={left} text={text} />
+      <Line top={top} />
+    </React.Fragment>
+  )
+}
+
 // <Stat header={'DAY 1'} subheader={'2019-10-18'} />
 // <Stat header={`DAY ${Runs.count}`} subheader={'2020-03-01'} />
 
-const labelTopPosition = distance => {
+const distanceToPX = distance => {
   const decimal = 1 - distance / 26.2
-  return Math.floor(decimal * 200) - 5
+  return decimal * 200
 }
 
 function BarChart() {
@@ -96,18 +114,19 @@ function BarChart() {
     <Container>
       <Wrapper>
         <ChartArea>
-          <DistanceLabel top={-5} left={-70} text={'26.2 MILES'} />
-          <DistanceLabel
-            top={labelTopPosition(13.1)}
+          <LabeledLine
+            top={distanceToPX(26.2)}
+            left={-70}
+            text={'26.2 MILES'}
+          />
+          <LabeledLine
+            top={distanceToPX(13.1)}
             left={-68}
             text={'13.1 MILES'}
           />
-          <DistanceLabel top={labelTopPosition(6.21)} left={-35} text={'10K'} />
-          <DistanceLabel top={labelTopPosition(3.11)} left={-30} text={'5K'} />
-          <DistanceLine top={0} />
-          <DistanceLine top={100} />
-          <DistanceLine top={labelTopPosition(6.21) + 5} />
-          <DistanceLine top={labelTopPosition(3.11) + 5} />
+          <LabeledLine top={distanceToPX(6.21)} left={-35} text={'10K'} />
+          <LabeledLine top={distanceToPX(3.11)} left={-30} text={'5K'} />
+          <Line top={200} type={'solid'} />
           {Bars}
         </ChartArea>
       </Wrapper>
@@ -117,6 +136,7 @@ function BarChart() {
           header={'TOTAL DISTANCE'}
           subheader={`${Runs.totalDistance()} MILES`}
         />
+        <Stat header={'TOTAL RUNS'} subheader={`${Runs.totalRuns()}`} />
       </Stats>
     </Container>
   )
