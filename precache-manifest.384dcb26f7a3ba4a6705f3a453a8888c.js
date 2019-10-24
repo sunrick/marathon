@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3a4be65cb64bb4984c7949ccd9ded5c4",
+    "revision": "fa537574af51656ba02607d95ca443c8",
     "url": "/marathon/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marathon/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "59fbae5205dec2c51a77",
+    "revision": "c624645b52268c71009f",
     "url": "/marathon/static/css/main.96e29ff1.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marathon/static/js/2.8179f53d.chunk.js"
   },
   {
-    "revision": "59fbae5205dec2c51a77",
-    "url": "/marathon/static/js/main.85847ebd.chunk.js"
+    "revision": "c624645b52268c71009f",
+    "url": "/marathon/static/js/main.331989d3.chunk.js"
   },
   {
     "revision": "bf1b66316aebd690baae",
