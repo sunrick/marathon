@@ -42,16 +42,16 @@ export default [
   },
   {
     date: '2019-10-23',
-    distance: 3.39,
-    pace: [10, 48],
-    time: [0, 36, 38],
+    distance: 0,
+    pace: [0, 0],
+    time: [0, 0, 0],
     calories: 617
   },
   {
     date: '2019-10-24',
-    distance: 0,
-    pace: [0, 0],
-    time: [0, 0, 0],
+    distance: 3.39,
+    pace: [10, 48],
+    time: [0, 36, 38],
     calories: 0
   },
   {
@@ -63,10 +63,10 @@ export default [
   },
   {
     date: '2019-10-26',
-    distance: 0,
-    pace: [0, 0],
-    time: [0, 0, 0],
-    calories: 0
+    distance: 5.23,
+    pace: [10, 44],
+    time: [0, 56, 10],
+    calories: 947
   },
   {
     date: '2019-10-27',
