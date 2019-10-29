@@ -114,16 +114,8 @@ function BarChart() {
     <Container>
       <Wrapper>
         <ChartArea>
-          <LabeledLine
-            top={distanceToPX(26.2)}
-            left={-70}
-            text={'26.2 MILES'}
-          />
-          <LabeledLine
-            top={distanceToPX(13.1)}
-            left={-68}
-            text={'13.1 MILES'}
-          />
+          <LabeledLine top={distanceToPX(26.2)} left={-75} text={'MARATHON'} />
+          <LabeledLine top={distanceToPX(13.1)} left={-45} text={'HALF'} />
           <LabeledLine top={distanceToPX(6.21)} left={-35} text={'10K'} />
           <LabeledLine top={distanceToPX(3.11)} left={-30} text={'5K'} />
           <Line top={200} type={'solid'} />
