@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Run({ run, maxDistance, count }) {
+function Bar({ run, maxDistance, count }) {
   const heightPercentage = (run.distance / maxDistance) * 100
   const widthPercentage = (1 / count) * 100
 
@@ -15,4 +15,4 @@ function Run({ run, maxDistance, count }) {
   )
 }
 
-export default Run
+export default Bar

@@ -1,26 +1,26 @@
-import items from './items'
+import data from './data'
 import _ from 'lodash'
 import moment from 'moment'
 
-const count = items.length
+const count = data.length
 
 const daysLeft = () => {
-  const firstDate = moment(items[count - 1].date)
+  const firstDate = moment(data[count - 1].date)
   const secondDate = moment()
   return firstDate.diff(secondDate, 'days') // =1
 }
 
 const totalDistance = () => {
-  return _.sumBy(items, 'distance')
+  return _.sumBy(data, 'distance').toFixed(2)
 }
 
 const totalRuns = () => {
-  return items.filter(item => item.distance > 0).length
+  return data.filter(item => item.distance > 0).length
 }
 
 export default (function Runs() {
   return {
-    items: items,
+    items: data,
     count: count,
     daysLeft: daysLeft,
     totalDistance: totalDistance,

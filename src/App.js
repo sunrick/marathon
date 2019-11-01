@@ -1,9 +1,9 @@
 import React from 'react'
 
-import BarChart from './BarChart'
+import Chart from './Chart'
 
 function App() {
-  return <BarChart />
+  return <Chart />
 }
 
 export default App
