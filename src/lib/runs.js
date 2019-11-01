@@ -18,12 +18,17 @@ const totalRuns = () => {
   return data.filter(item => item.distance > 0).length
 }
 
+const caloriesBurned = () => {
+  return Math.round(_.sumBy(data, 'calories'))
+}
+
 export default (function Runs() {
   return {
     items: data,
     count: count,
     daysLeft: daysLeft,
     totalDistance: totalDistance,
-    totalRuns: totalRuns
+    totalRuns: totalRuns,
+    caloriesBurned: caloriesBurned
   }
 })()

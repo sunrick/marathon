@@ -61,12 +61,10 @@ function Chart() {
         </ChartArea>
       </Wrapper>
       <Stats>
-        <Stat header={'DAYS LEFT'} subheader={Runs.daysLeft().toString()} />
-        <Stat
-          header={'TOTAL DISTANCE'}
-          subheader={`${Runs.totalDistance()} MILES`}
-        />
-        <Stat header={'TOTAL RUNS'} subheader={`${Runs.totalRuns()}`} />
+        <Stat header={Runs.totalRuns()} subheader={'RUNS'} />
+        <Stat header={Runs.totalDistance()} subheader={'MILES RUN'} />
+        <Stat header={Runs.caloriesBurned()} subheader={'CALORIES BURNED'} />
+        <Stat header={Runs.daysLeft().toString()} subheader={'DAYS LEFT'} />
       </Stats>
     </Container>
   )
