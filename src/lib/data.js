@@ -140,10 +140,10 @@ export default [
   },
   {
     date: '2019-11-06',
-    distance: 0,
-    pace: [0, 0],
-    time: [0, 0, 0],
-    calories: 0
+    distance: 8.17,
+    pace: [9, 35],
+    time: [1, 18, 15],
+    calories: 1469
   },
   {
     date: '2019-11-07',
