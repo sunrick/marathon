@@ -224,17 +224,17 @@ export default [
   },
   {
     date: '2019-11-18',
-    distance: 5.72,
-    pace: [9, 45],
-    time: [0, 55, 46],
-    calories: 1033
-  },
-  {
-    date: '2019-11-19',
     distance: 0,
     pace: [0, 0],
     time: [0, 0, 0],
     calories: 0
+  },
+  {
+    date: '2019-11-19',
+    distance: 5.72,
+    pace: [9, 45],
+    time: [0, 55, 46],
+    calories: 1033
   },
   {
     date: '2019-11-20',
@@ -245,10 +245,10 @@ export default [
   },
   {
     date: '2019-11-21',
-    distance: 0,
-    pace: [0, 0],
-    time: [0, 0, 0],
-    calories: 0
+    distance: 6.05,
+    pace: [9, 25],
+    time: [0, 57, 5],
+    calories: 1099
   },
   {
     date: '2019-11-22',
