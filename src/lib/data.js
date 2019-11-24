@@ -259,10 +259,10 @@ export default [
   },
   {
     date: '2019-11-23',
-    distance: 0,
-    pace: [0, 0],
-    time: [0, 0, 0],
-    calories: 0
+    distance: 10.58,
+    pace: [9, 42],
+    time: [1, 42, 36],
+    calories: 1907
   },
   {
     date: '2019-11-24',
